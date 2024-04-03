@@ -40,7 +40,7 @@ class FriendsTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  test "should destroy Friend" do
+  test "destroying a Friend" do
     visit friend_url(@friend)
     click_on "Destroy this friend", match: :first
 
