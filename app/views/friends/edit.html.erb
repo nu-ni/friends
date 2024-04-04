@@ -2,8 +2,10 @@
 <br/>
 <%= render 'form', friend: @friend %>
 
-<br/>
-
+<br>
 <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
 
-<%= button_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<br>
+<br>
+
+    <%= button_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
