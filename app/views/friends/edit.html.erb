@@ -6,4 +6,4 @@
 
 <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
 
-<%= link_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<%= button_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
