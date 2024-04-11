@@ -21,7 +21,9 @@ class FriendsController < ApplicationController
 
   # GET /friends/1/edit
   def edit
+    @friend = Friend.find(params[:id])
   end
+  
 
   # POST /friends or /friends.json
   def create

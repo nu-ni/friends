@@ -1,4 +1,3 @@
-<h1>Friend List</h1>
 <% if user_signed_in? %>
 
 
@@ -9,7 +8,6 @@
       <th>Email</th>
       <th>Phone</th>
       <th>Twitter</th>
-      <th>User Id</th>
       <th colspan=" "></th>
     </tr>
   </thead>
@@ -22,8 +20,7 @@
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.twitter %></td>
-        <td><%= friend.user_id %></td>
-        <td><%= button_to 'Delete', friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></td>
+        <td><%= button_to 'Delete', friend, method: :delete, data: {turbo_confirm: "This friend will be deleted"}, class: "btn btn-outline-danger btn-sm" %></td>
       </tr>
       <% end %>
     <% end %>
@@ -34,4 +31,6 @@
 <h1>Hello World</h1>
 This my first Ruby on Rails application.
 <% end %>
+<br>
+<br>
 <%= link_to "New friend", new_friend_path, class:"btn btn-secondary" %>

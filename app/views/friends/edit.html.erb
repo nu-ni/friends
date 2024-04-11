@@ -8,5 +8,4 @@
 <br>
 <br>
 
-    <%= button_to 'Delete', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
-
+<%= button_to 'Delete', @friend, method: :delete, data: {turbo_confirm: "This friend will be deleted"} , class: "btn btn-danger" %>
